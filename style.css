@@ -1,0 +1,145 @@
+/* changing default style of browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #333;
+  background-image: url("https://images.unsplash.com/photo-1573828718637-233537e3b9e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80.jpg");
+}
+.page-container {
+  padding-top: 40px;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 sec linear;
+  border: 10px solid rgba(10, 0, 0, 0.103);
+  border-radius: 15px;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 521px;
+}
+.image-container {
+  width: 50%;
+  flex-grow: 1;
+  float: left;
+  height: auto;
+  position: relative;
+
+  box-shadow: 0 0 20px #bac3c3;
+  flex: 1 1 200px;
+}
+
+.text-overlap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  background-color: rgba(204, 197, 197, 0.452);
+  width: 80%;
+  font-size: 15px;
+}
+
+.text-overlap h2 {
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+/*Styling for form section*/
+.form-container {
+  height: auto;
+  position: relative;
+  padding: 0;
+  flex-grow: 1;
+}
+
+/* style for form tag */
+#form {
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.create-account {
+  font-weight: bold;
+  font-size: 35px;
+  color: black;
+  padding-bottom: 20px;
+}
+.dateOfBirth {
+  padding-top: 10px;
+}
+
+div label {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+.radio-option {
+  padding: 15px;
+}
+
+button {
+  margin-top: 15px;
+  width: 70%;
+  height: 45px;
+  background-color: #0ae;
+  border: 2px solid #0ae;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: all 0.1s ease-in;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.input-box {
+  height: 35px;
+  width: 80%;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.date-box {
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 10px;
+}
+.dateOfBirth label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+  padding: 20px;
+  color: rgb(139, 137, 137);
+}
+input:invalid {
+  border: 3px solid red;
+}
+
+.agencyOrIndividual input {
+  margin-right: 10px;
+}

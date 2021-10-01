@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Site</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="page-container">
+    <main class="main-container">
+      <!-- image section -->
+      <section class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1576694498412-0e31e31f387d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhlaWdodHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.jpg"
+          alt="color-image"
+        />
+
+        <div class="text-overlap">
+          <h2>Sample heading</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and types industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s. Lorem Ipsum is simply dummy text of the printing and
+            types industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s.
+          </p>
+        </div>
+      </section>
+
+      <!-- form section -->
+      <section class="form-container">
+        <form id="form">
+          <h2 class="create-account">Create an account</h2>
+
+          <!--Email Input here-->
+          <div>
+            <label>Enter your Email</label><br />
+
+            <input
+              type="email"
+              required
+              class="input-box email"
+              oninvalid="this.setCustomValidity('Please add valid email address')"
+              oninput="this.setCustomValidity('')"
+            /><br /><br />
+          </div>
+
+          <!--Date of birth Input here-->
+          <div>
+            <label>Date of birth(optional)</label><br />
+            <div class="dateOfBirth">
+              <label>Day</label>
+              <label>Month</label>
+              <label>Year</label>
+              <br />
+              <select id="day" class="date-box"></select>
+              <select id="month" class="date-box"></select>
+              <select id="year" class="date-box"></select
+              ><br /><br />
+            </div>
+          </div>
+
+          <!--Password Input here-->
+          <div>
+            <label for="password">Choose a strong password</label><br />
+            <input
+              type="password"
+              required
+              id="password"
+              class="input-box password"
+            /><br /><br />
+          </div>
+
+          <!-- agency or individual -->
+          <div>
+            <label class="agencyOrIndividual"
+              >Are you an agency or individual?</label
+            ><br />
+
+            <input
+              type="radio"
+              id="individual"
+              name="typeOfCustomer"
+              value="Individual"
+              required
+            />
+            <label class="radio-option">Individual</label>
+            <input
+              type="radio"
+              id="agency"
+              name="typeOfCustomer"
+              value="Agency"
+            />
+            <label class="radio-option">Agency</label><br /><br />
+          </div>
+
+          <!-- submit button -->
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
